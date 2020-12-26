@@ -1,0 +1,91 @@
+{
+  "definitions": {},
+  "info": {
+    "title": "API REST documentation",
+    "version": "1.0.0",
+    "license": {
+      "name": "ISC"
+    },
+    "description": "REST API to manage users"
+  },
+  "basePath": "/api/v1",
+  "host": "localhost:8081",
+  "paths": {
+    "members/{id}": {
+      "get": {
+        "summary": "members/{id}",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "put": {
+        "summary": "members/{id}",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "delete": {
+        "summary": "members/{id}",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    },
+    "members": {
+      "get": {
+        "summary": "members",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "name": "max",
+            "in": "query",
+            "required": false
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "post": {
+        "summary": "members",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "body",
+            "required": true
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    }
+  },
+  "swagger": "2.0",
+  "tags": [
+    {
+      "name": "members",
+      "description": "Methods to manage users"
+    }
+  ]
+}
